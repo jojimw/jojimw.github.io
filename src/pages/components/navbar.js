@@ -8,15 +8,15 @@ const Navbar = () => {
         <header>
             <nav>
                 <Link to="/" className="logo">
-                    <h1>A.</h1>
+                    <h1>J.</h1>
                 </Link>
                 <ul className="menu">
-                    <li className="menu__list">
+                    {/* <li className="menu__list">
                         <Link to="/work/" className="menu__list__link">Works</Link>
                     </li>
                     <li className="menu__list">
                         <Link to="/gallery/" className="menu__list__link">Gallery</Link>
-                    </li>
+                    </li> */}
                     <li className="menu__list">
                         <Link to="/contact/" className="menu__list__link">Contact</Link>
                     </li>

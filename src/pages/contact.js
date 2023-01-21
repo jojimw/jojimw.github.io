@@ -18,8 +18,8 @@ const Contact = () => {
                     <article>
                         <h3>Reach me at</h3>
                         <div className="items">
-                            <a href="mailto:ayyoobcastro@icloud.com">ayyoobcastro@icloud.com</a>
-                            <a href="tel:+918943019850">+91 894 301 9850</a>
+                            <a href="mailto:jojimw96@gmail.com">jojimw96@gmail.com</a>
+                            <a href="tel:+918281443578">+91 828 144 3578</a>
                         </div>
                         <div className="follow">
                             <ul>
@@ -28,13 +28,13 @@ const Contact = () => {
                                         <span> github</span>
                                     </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a href="https://twitter.com/jojimw" target="_blank">
                                         <span> twitter</span>
                                     </a>
-                                </li>
+                                </li> */}
                                 <li>
-                                    <a href="https://www.instagram.com/jojimw/" target="_blank">
+                                    <a href="https://www.instagram.com/heis_nb_rg/" target="_blank">
                                         <span> instagram</span>
                                     </a>
                                 </li>

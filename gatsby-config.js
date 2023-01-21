@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "ayyoobcastro",
+    title: "jojimathew",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -21,15 +21,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ayyoob Castro`,
-        short_name: `Ayyoob Castro`,
+        name: `Joji Mathew`,
+        short_name: `Joji Mathew`,
         description: `My personal portfolio website`,
         lang: `en`,
         start_url: `/`,
         background_color: `#000`,
         theme_color: `#000`,
         display: `standalone`,
-        icon: `src/images/icon.png`
+        icon: `src/images/icon.jpg`
       },
     },
   ],

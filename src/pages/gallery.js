@@ -91,7 +91,7 @@ const Gallery = () => {
                             </div>
                         </div>
 
-                        <a className="more-btn" target="_blank" href="https://www.instagram.com/ayyoobcastro/" >More on <span>Instagram</span></a>
+                        <a className="more-btn" target="_blank" href="https://www.instagram.com/heis_nb_rg/" >More on <span>Instagram</span></a>
 
                     </article>
                 </div>

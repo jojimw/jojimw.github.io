@@ -28,14 +28,14 @@ Trace:
 
 npm manifest: 
   {
-    "name": "ayyoobcastro",
+    "name": "jojimathew",
     "version": "1.0.0",
     "private": true,
-    "description": "ayyoobcastro",
-    "author": "ayyoobcastro",
+    "description": "jojimathew",
+    "author": "jojimathew",
     "keywords": [
       "gatsby",
-      "ayyoobcastro"
+      "jojimathew"
     ],
     "scripts": {
       "develop": "gatsby develop",
