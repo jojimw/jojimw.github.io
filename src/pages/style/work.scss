@@ -1,0 +1,117 @@
+@import "../style/app.scss";
+.works {
+  padding-top: 200px;
+  @media (max-width: $media-xs) {
+    padding-top: 100px;
+  }
+  article {
+    .row {
+      align-items: center;
+      @media (max-width: $media-md) {
+        flex-direction: column-reverse;
+      }
+    }
+    .col-half {
+      @media (max-width: $media-md) {
+        width: 100%;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 50vh;
+      padding-left: 100px;
+      @media (max-width: $media-lg) {
+        padding-left: 0;
+      }
+      @media (max-width: $media-md) {
+        padding-left: 0;
+        min-height: auto;
+        padding-top: 30px;
+        min-height: auto;
+      }
+      .project-number {
+        font-size: 20px;
+        font-weight: $regular;
+      }
+      .project-name {
+        margin: 0;
+        font-size: 50px;
+        font-weight: $medium;
+        margin-bottom: 20px;
+        @media (max-width: $media-xs) {
+          font-size: 30px;
+          font-weight: $bold;
+        }
+        span {
+          color: $red;
+        }
+      }
+    }
+    .image {
+      img {
+        min-height: 50vh;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.other-work {
+  padding-top: 200px;
+  @media (max-width: $media-xs) {
+    padding-top: 0;
+    padding-top: 60px;
+  }
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    .project {
+      width: calc(100% / 2);
+      padding-bottom: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+      @media (max-width: $media-xs) {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 30px;
+      }
+      &:nth-child(even) {
+        padding-top: 50px;
+        @media (max-width: $media-xs) {
+          padding-top: 30px;
+        }
+      }
+      figure {
+        margin: 0;
+        img {
+          width: 100%;
+          @media (max-width: $media-xs) {
+            min-height: 50vh;
+            object-fit: cover;
+          }
+        }
+        figcaption {
+          .project-name {
+            color: $white;
+            padding-top: 40px;
+            display: block;
+            font-size: 30px;
+            font-weight: $bold;
+            margin-bottom: 20px;
+            @media (max-width: $media-xs) {
+              padding-top: 20px;
+              font-size: 20px;
+              margin-bottom: 10px;
+            }
+            &::first-letter {
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+@import "../style/app.scss";
+
+.home {
+  .img {
+    width: 40%;
+    overflow: hidden;
+    @media (max-width: $media-xs) {
+      width: calc(100% - 80px);
+      height: auto;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      // filter: grayscale(100);
+      @media (max-width: $media-xs) {
+        height: 60vh;
+      }
+    }
+  }
+
+  .content {
+    width: 60%;
+    @media (max-width: $media-xs) {
+      width: 100%;
+    }
+    .me {
+      article {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        @media (max-width: $media-xs) {
+          min-height: auto;
+          padding-top: 60px;
+          padding-bottom: 60px;
+          display: block;
+        }
+
+        h2 {
+          margin: 0;
+          color: $white;
+          font-size: 50px;
+          line-height: 60px;
+          @media (max-width: $media-xs) {
+            font-size: 30px;
+            line-height: 40px;
+          }
+          span {
+            color: $red;
+          }
+        }
+        h1 {
+          margin: 0;
+          color: $red;
+          font-size: 23px;
+          line-height: 33px;
+          @media (max-width: $media-xs) {
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+
+        .learn-more {
+          color: $white;
+          opacity: 0.5;
+          writing-mode: vertical-lr;
+          position: relative;
+          margin-top: 30px;
+          display: inline-table;
+          font-size: 18px;
+          line-height: 26px;
+          cursor: pointer;
+          @media (max-width: $media-xlg) {
+            font-size: 17px;
+            line-height: 25px;
+          }
+          @media (max-width: $media-lg) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+          @media (max-width: $media-md) {
+            font-size: 15px;
+            line-height: 23px;
+          }
+          @media (max-width: $media-xs) {
+            font-size: 14px;
+            line-height: 22 px;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 0;
+            background: #fff;
+            position: absolute;
+            top: 88px;
+            left: 11px;
+            transition: 0.3s ease-in-out;
+          }
+          &::before {
+            content: "";
+            display: block;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1MS44NDcgNDUxLjg0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8cGF0aCBkPSJNMjI1LjkyMywzNTQuNzA2Yy04LjA5OCwwLTE2LjE5NS0zLjA5Mi0yMi4zNjktOS4yNjNMOS4yNywxNTEuMTU3Yy0xMi4zNTktMTIuMzU5LTEyLjM1OS0zMi4zOTcsMC00NC43NTEgICBjMTIuMzU0LTEyLjM1NCwzMi4zODgtMTIuMzU0LDQ0Ljc0OCwwbDE3MS45MDUsMTcxLjkxNWwxNzEuOTA2LTE3MS45MDljMTIuMzU5LTEyLjM1NCwzMi4zOTEtMTIuMzU0LDQ0Ljc0NCwwICAgYzEyLjM2NSwxMi4zNTQsMTIuMzY1LDMyLjM5MiwwLDQ0Ljc1MUwyNDguMjkyLDM0NS40NDlDMjQyLjExNSwzNTEuNjIxLDIzNC4wMTgsMzU0LjcwNiwyMjUuOTIzLDM1NC43MDZ6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==);
+            width: 20px;
+            height: 20px;
+            background-size: 11px;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 100px;
+            left: 1px;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+          }
+          &:hover {
+            &::after {
+              height: 30px;
+            }
+            &:before {
+              opacity: 1;
+              top: 106px;
+            }
+          }
+        }
+      }
+    }
+    .more-me {
+      article {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        //   padding-top: 200px;
+        //   padding-bottom: 200px;
+        @media (max-width: $media-xs) {
+          min-height: auto;
+          // padding-top: 60px;
+          // padding-bottom: 60px;
+          display: block;
+        }
+        h1 {
+          span {
+            color: $red;
+          }
+        }
+        .follow {
+          padding-top: 40px;
+          ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            margin-left: -15px;
+            margin-right: -15px;
+            @media (max-width: $media-xs) {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+            li {
+              list-style: none;
+              a {
+                color: $white;
+                //   opacity: 0.5;
+                font-weight: $semi-bold;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: 18px;
+                text-transform: capitalize;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

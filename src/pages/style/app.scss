@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Sen:wght@400;700;800&display=swap");
+
+$media-xlg: 1500px; //120em
+$media-lg: 1200px; //75em
+$media-md: 992px; //62em
+$media-sm: 768px; //48em
+$media-xs: 544px; //34em
+
+//fonts
+$font-1: "Sen", sans-serif;
+$font-2: "Laila", sans-serif;
+
+//colors
+$red: #ff1717;
+$black: #121212;
+$white: #fff;
+
+//weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: $font-1;
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    outline: none;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: $white;
+}
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.sitebody {
+  background-color: $black;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.site-container {
+  padding-left: 80px;
+  padding-right: 100px;
+  @media (max-width: $media-xlg) {
+    padding-left: 60px;
+    padding-right: 90px;
+  }
+  @media (max-width: $media-lg) {
+    padding-left: 50px;
+    padding-right: 80px;
+  }
+  @media (max-width: $media-md) {
+    padding-left: 40px;
+    padding-right: 70px;
+  }
+  @media (max-width: $media-xs) {
+    padding-left: 30px;
+    padding-right: 60px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  .col-half {
+    width: 50%;
+    @media (max-width: $media-xs) {
+      width: 100%;
+    }
+  }
+  .col-full {
+    width: 100%;
+  }
+}
+
+p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+  @media (max-width: $media-xlg) {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  @media (max-width: $media-lg) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (max-width: $media-md) {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  @media (max-width: $media-xs) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.container-2 {
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  // padding-left: 80px;
+  @media (max-width: $media-xs) {
+    padding-left: 30px;
+    padding-right: 60px;
+  }
+}
+
+.project-link {
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  span {
+    color: $white;
+    z-index: 3;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (max-width: $media-lg) {
+      font-size: 15px;
+      line-height: 23px;
+    }
+    @media (max-width: $media-md) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    @media (max-width: $media-xs) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    background: $white;
+    opacity: 0.2;
+    left: 0;
+    transition: 0.2s ease-out;
+  }
+  &:hover {
+    &::before {
+      left: 40%;
+      width: 70%;
+    }
+  }
+}
