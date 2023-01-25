@@ -47,10 +47,10 @@ const IndexPage = () => {
                   <h1><span>Hello,</span></h1>
                   <br />
                   <p>
-                    I am an Energetic Software Engineer and Team Lead with a strong interest in latest tech, keen to develop and execute robust, clean and performant software products. Look forward to mentoring people and shaping them into the best minds possible.
+                    I am a Software Engineer and Tech Lead with a passion for technology, mentoring, and personal growth. I have a strong background in software development and have experience leading teams to deliver innovative solutions. I am always eager to learn new things and stay up-to-date with the latest advancements in the field.
                   </p>
                   <p>
-                    To prove myself in the IT Industry by utilizing my skills and abilities in the Industry and find a better position that offers professional growth while being resourceful, innovative and flexible. Solid understanding of Software Development Life Cycle processes including Requirement gathering, Analysis and Design, Development tools and Technologies, Release and Version control.
+                    As an engineer, I am always looking for ways to push the boundaries of technology and improve upon existing solutions. When I am not working, I enjoy traveling, playing badminton, and indulging in my love for Formula 1 and football. These passions give me a chance to explore new places, cultures, and activities, and also to stay active and refreshed when I am not working on new projects.
                   </p>
                 </div>
               </article>
