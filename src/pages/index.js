@@ -19,31 +19,31 @@ const IndexPage = () => {
       </Helmet>
 
       <Navbar />
-      <div class="home row">
+      <div className="home row">
 
 
-        <div class="img">
+        <div className="img">
           <StaticImage src="../images/banner.jpg" alt="jojimathew" />
         </div>
 
 
 
-        <div class="content">
+        <div className="content">
 
-          <div class="me">
-            <div class="site-container">
+          <div className="me">
+            <div className="site-container">
               <article>
                 <h1>Joji Mathew</h1>
                 <h2>Lead Software Engineer</h2>
-                <a class="learn-more scroll-down" data-target=".bio" href="#moreIn">Read more</a>
+                <a className="learn-more scroll-down" data-target=".bio" href="#moreIn">Read more</a>
               </article>
             </div>
           </div>
 
-          <div class="more-me" id="moreIn">
-            <div class="site-container">
+          <div className="more-me" id="moreIn">
+            <div className="site-container">
               <article>
-                <div class="bio">
+                <div className="bio">
                   <h1><span>Hello,</span></h1>
                   <br />
                   <p>

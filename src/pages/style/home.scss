@@ -2,9 +2,11 @@
 
 .home {
   .img {
+    position: fixed;
     width: 40%;
     overflow: hidden;
     @media (max-width: $media-xs) {
+      position: relative;
       width: calc(100% - 80px);
       height: auto;
     }
@@ -19,8 +21,10 @@
   }
 
   .content {
+    margin-left: 40%;
     width: 60%;
     @media (max-width: $media-xs) {
+      margin-left: 0;
       width: 100%;
     }
     .me {
