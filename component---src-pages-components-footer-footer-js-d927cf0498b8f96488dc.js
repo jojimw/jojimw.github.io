@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkjojimw=self.webpackChunkjojimw||[]).push([[870],{9602:function(e,n,t){t.r(n);var l=t(7294);n.default=function(){return l.createElement("footer",null,l.createElement("span",null,"© 2023 All Rights reserved"))}}}]);
-//# sourceMappingURL=component---src-pages-components-footer-footer-js-d927cf0498b8f96488dc.js.map
