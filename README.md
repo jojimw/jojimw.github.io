@@ -4,45 +4,59 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  jojimathew.xyz
 </h1>
 
-## 🚀 Quick start
+<p align="center">
+  Personal website built with Gatsby
+</p>
 
-1.  **Create a Gatsby site.**
+## Prerequisites
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+First, ensure you have Node.js installed. Then check if you have Yarn:
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+```bash
+yarn --version
+```
 
-2.  **Start developing.**
+If you see a version number, you're good to go. If not, install Yarn:
 
-    Navigate into your new site’s directory and start it up.
+```bash
+npm install -g yarn
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## 🚀 Quick Start
 
-3.  **Open the code and start customizing!**
+1. **Install dependencies**
 
-    Your site is now running at http://localhost:8000!
+```bash
+yarn
+```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+2. **Start development server**
 
-4.  **Learn more**
+```bash
+yarn develop
+```
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Your site will be running at `http://localhost:8000`
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 🚢 Deployment
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+This site automatically deploys to GitHub Pages when changes are pushed to the main branch. The deployment process:
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+1. Builds the Gatsby site
+2. Optimizes assets
+3. Deploys to GitHub Pages
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+You can view the deployment status in the Actions tab of the repository.
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 🛠️ Development
+
+- Edit pages in `src/pages/`
+- Styles are in `src/pages/style/`
+- Images and other static assets go in `src/images/`
+
+## 📝 License
+
+This project is licensed under the MIT License.
