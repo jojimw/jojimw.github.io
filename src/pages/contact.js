@@ -34,11 +34,6 @@ const Contact = () => {
                                     </a>
                                 </li> */}
                                 <li>
-                                    <a href="https://www.instagram.com/heis_nb_rg/" target="_blank">
-                                        <span> instagram</span>
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="https://www.linkedin.com/in/jojimw/" target="_blank">
                                         <span> linkedIn</span>
                                     </a>
