@@ -44,13 +44,13 @@ const IndexPage = () => {
             <div className="site-container">
               <article>
                 <div className="bio">
-                  <h1><span>Hello,</span></h1>
+                  <h1><span>Hey!</span></h1>
                   <br />
                   <p>
-                    I am a Software Engineer and Tech Lead with a passion for technology, mentoring, and personal growth. I have a strong background in software development and have experience leading teams to deliver innovative solutions. I am always eager to learn new things and stay up-to-date with the latest advancements in the field.
+                    I am a Full-Stack Developer and Tech Lead with 7+ years of building software that millions of people use. I have architected AI-powered platforms, led engineering teams, served as CTO, and shipped a mobile app with 1M+ installs. What really excites me is creating products that solve real problems and mentoring developers to grow beyond where I am today.
                   </p>
                   <p>
-                    As an engineer, I am always looking for ways to push the boundaries of technology and improve upon existing solutions. When I am not working, I enjoy traveling, playing badminton, and indulging in my love for Formula 1 and football. These passions give me a chance to explore new places, cultures, and activities, and also to stay active and refreshed when I am not working on new projects.
+                    My tech stack includes React, TypeScript, Node.js, AWS, and AI integrations. My real strength is turning big ideas into working features that people love. When not debugging or deploying, you will find me analyzing Formula 1 race strategies, playing badminton, or exploring new cities. I believe great software comes from curious minds, and I am endlessly curious about technology, design, and the world around us.
                   </p>
                 </div>
               </article>

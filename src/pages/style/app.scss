@@ -161,10 +161,24 @@ p {
     left: 0;
     transition: 0.2s ease-out;
   }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $red;
+    transition: width 0.3s ease;
+  }
   &:hover {
+    color: lighten($red, 10%);
     &::before {
       left: 40%;
       width: 70%;
+    }
+    &:after {
+      width: 100%;
     }
   }
 }
