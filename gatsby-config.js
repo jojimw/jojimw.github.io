@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "jojimathew",
   },
+  trailingSlash: "always",
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-gatsby-cloud",

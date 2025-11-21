@@ -18,7 +18,7 @@ const Contact = () => {
                     <article>
                         <h3>Reach me at</h3>
                         <div className="items">
-                            <a href="mailto:me@jojimathew.xyz">me@jojimathew.xyz</a>
+                            <a href="mailto:jojimw96@gmail.com">jojimw96@gmail.com</a>
                             <a href="tel:+918281443578">+91 828 144 3578</a>
                         </div>
                         <div className="follow">
@@ -33,11 +33,6 @@ const Contact = () => {
                                         <span> twitter</span>
                                     </a>
                                 </li> */}
-                                <li>
-                                    <a href="https://www.instagram.com/heis_nb_rg/" target="_blank">
-                                        <span> instagram</span>
-                                    </a>
-                                </li>
                                 <li>
                                     <a href="https://www.linkedin.com/in/jojimw/" target="_blank">
                                         <span> linkedIn</span>
