@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./style/experience.scss";
 
-import Navbar from './components/navbar';
+import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
-import Modal from './components/modal';
+import Modal from './components/modal/modal';
 import { Helmet } from "react-helmet";
 
 const workExperience = [

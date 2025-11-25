@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/contact.scss";
 
-import Navbar from './components/navbar';
+import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 import { Helmet } from "react-helmet";
 
