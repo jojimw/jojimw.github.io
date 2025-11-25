@@ -1,0 +1,179 @@
+import React, { useState } from "react";
+import "./style/experience.scss";
+
+import Navbar from './components/navbar';
+import Footer from './components/footer/footer';
+import Modal from './components/modal';
+import { Helmet } from "react-helmet";
+
+const workExperience = [
+  {
+    "id": 1,
+    "company": "ThoughtSpot",
+    "position": "Member of Technical Staff",
+    "duration": "Nov 2023 - Jul 2025",
+    "location": "Trivandrum, India",
+    "current": false,
+    "responsibilities": [
+      "Built and maintained scalable UI components for dashboard layouts using React.js and TypeScript, reducing code duplication by 30% and accelerating the development of new features by 25%.",
+      "Contributed to GraphQL + Node.js middleware for seamless data integration.",
+      "Developed and deployed AI-integrated chatbot & recommendation engine leveraging OpenAI API.",
+      "Implemented an AI-driven end-to-end automation test suite with Playwright, achieving 95% test coverage for critical user flows and decreasing bug-related support tickets by 40%.",
+      "Delivered dashboard theming and a sanitization security layer for HTML inputs, mitigating XSS vulnerabilities and helping retain key enterprise clients.",
+      "Built visualization modules for ThoughtSpot's React Native app, delivering fast and consistent charts across devices."
+    ]
+  },
+  {
+    "id": 2,
+    "company": "EADATH",
+    "position": "Chief Technology Officer",
+    "duration": "Mar 2023 - Oct 2023",
+    "location": "Kochi, India",
+    "current": false,
+    "responsibilities": [
+      "Established company technology strategy, ensuring alignment with business goals and rapid execution cycles.",
+      "Translated non-technical stakeholder discussions into product requirements, leading to high-fidelity prototypes within 2 months.",
+      "Oversaw the development, implementation, documentation, and maintenance of technical infrastructure.",
+      "Utilized Next.js in TypeScript for frontend and Nest.js with a PostgreSQL backend, orchestrated CI/CD pipelines using AWS services, reducing deployment time by 30% and AWS Amplify for rapid frontend deployments."
+    ]
+  },
+  {
+    "id": 3,
+    "company": "KeyValue Software Systems",
+    "position": "Associate Technical Lead",
+    "duration": "Jul 2020 - Feb 2023",
+    "location": "Kochi, India",
+    "current": false,
+    "responsibilities": [
+      "Developed and released a native app in React Native in 2 months, achieving 1 million+ installs on the Play Store, utilized AWS Lambda and S3 for scalable backend data processing.",
+      "Designed and delivered three web applications from scratch using Next.js, TypeScript, Redux Toolkit, Apollo GraphQL, and Tailwind CSS.",
+      "Led a frontend team of 10 engineers, effectively managing project timelines with Agile, resolving blockers at a 90% JIRA success rate."
+    ]
+  },
+  {
+    "id": 4,
+    "company": "Delightree",
+    "position": "Full Stack Engineer",
+    "duration": "Aug 2019 - Jun 2020",
+    "location": "Bangalore, India",
+    "current": false,
+    "responsibilities": [
+      "Designed key features in Delightree web-app using React.js and Apollo GraphQL.",
+      "Implemented SOP-to-Todo-list converter in Delightree web-app, reducing task creation time by 30% and boosting user engagement with standardized operating procedures.",
+      "Redesigned the web-app for native use in React Native and contributed to backend enhancements using Node.js, GraphQL, and MongoDB.",
+      "Automated backend server deployments, increasing development and testing efficiency by 50%."
+    ]
+  },
+  {
+    "id": 5,
+    "company": "Sieve",
+    "position": "Frontend Developer",
+    "duration": "Jul 2018 - Jul 2019",
+    "location": "Kochi, India",
+    "current": false,
+    "responsibilities": [
+      "Built a React.js web application to manage freelancer workflows, including custom websites, client onboarding, scheduling, invoicing, and payment routing.",
+      "Migrated custom website to server-side rendering powered by Node.js, reducing initial load time by 40%."
+    ]
+  }
+];
+
+const Experience = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
+    return (
+        <div className="sitebody">
+            <Helmet>
+                <title>Work Experience</title>
+                <link rel="canonical" href="https://jojimathew.xyz/experience/" />
+                <meta name="description" content="Professional work experience and career journey." />
+            </Helmet>
+            <Navbar />
+            
+            <section className="experience-section">
+                <div className="site-container">
+                    <div className="experience-header">
+                        <h1 className="section-title"><span>W</span>ork Experience</h1>
+                        <p className="section-subtitle">My professional journey building products that scale</p>
+                        <button onClick={openModal} className="resume-btn">
+                            <svg className="resume-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/>
+                            </svg>
+                            <span>View Resume</span>
+                        </button>
+                    </div>
+
+                    <div className="timeline">
+                        {workExperience.map((experience) => (
+                            <div key={experience.id} className="timeline-item">
+                                <div className="timeline-marker"></div>
+                                <div className="timeline-content">
+                                    <div className="experience-card">
+                                        <div className="card-header">
+                                            <h3 className="company-name">{experience.company}</h3>
+                                            <span className="duration">{experience.duration}</span>
+                                        </div>
+                                        <div className="card-details">
+                                            <h4 className="position">{experience.position}</h4>
+                                            <p className="location">{experience.location}</p>
+                                        </div>
+                                        <div className="responsibilities">
+                                            <ul>
+                                                {experience.responsibilities.map((responsibility, index) => (
+                                                    <li key={index}>{responsibility}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <Modal isOpen={isModalOpen} onClose={closeModal}>
+                <div className="resume-viewer">
+                    <div className="resume-header">
+                        <h3>Resume - Joji Mathew</h3>
+                        <div className="header-actions">
+                            <a 
+                                href="https://drive.google.com/uc?export=download&id=1NdA4kSS5AWDOAq-OYxHRVYXvb9nGgNhl"
+                                download="Joji_Mathew_Resume.pdf"
+                                className="download-btn"
+                                aria-label="Download resume as PDF"
+                                title="Download Resume"
+                            >
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </a>
+                            <button onClick={closeModal} className="close-btn" aria-label="Close resume viewer">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div className="pdf-container">
+                        <iframe
+                            src="https://drive.google.com/file/d/1NdA4kSS5AWDOAq-OYxHRVYXvb9nGgNhl/preview"
+                            width="100%"
+                            height="600px"
+                            title="Joji Mathew Resume"
+                            loading="lazy"
+                            style={{ border: 'none' }}
+                        />
+                    </div>
+                </div>
+            </Modal>
+
+            <Footer />
+        </div>
+    )
+}
+
+export default Experience

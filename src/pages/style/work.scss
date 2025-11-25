@@ -55,12 +55,12 @@
       flex-direction: column;
       justify-content: center;
       min-height: 50vh;
-      padding-left: 30px;
+      padding-right: 30px;
       @media (max-width: $media-lg) {
-        padding-left: 0;
+        padding-right: 10px;
       }
       @media (max-width: $media-md) {
-        padding-left: 0;
+        padding-right: 0;
         min-height: auto;
         padding-top: 30px;
         min-height: auto;

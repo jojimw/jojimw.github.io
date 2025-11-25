@@ -19,7 +19,7 @@ const Work = () => {
             </Helmet>
             <Navbar />
             <section className="works">
-                <div className="site-container">
+                <div className="container-2">
                     <article>
 
                         <div className="row">
@@ -112,7 +112,6 @@ const Work = () => {
                                     <div className="tech-stack">
                                         <TechTag tech="React Native" />
                                         <TechTag tech="GraphQL" />
-                                        <TechTag tech="AWS Lambda" />
                                         <TechTag tech="AWS S3" />
                                         <TechTag tech="Redux Toolkit" />
                                         <TechTag tech="TypeScript" />
@@ -150,6 +149,7 @@ const Work = () => {
                                         <TechTag tech="React.js" />
                                         <TechTag tech="Next.js" />
                                         <TechTag tech="TypeScript" />
+                                        <TechTag tech="Node.js" />
                                         <TechTag tech="Nest.js" />
                                         <TechTag tech="PostgreSQL" />
                                         <TechTag tech="AWS" />
