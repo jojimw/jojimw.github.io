@@ -1,6 +1,6 @@
 <h1 align="center">
-<a href="https://jojimathew.xyz">
-  jojimathew.xyz
+<a href="https://jojimw.github.io">
+  jojimw.github.io
 </a>
 </h1>
 
